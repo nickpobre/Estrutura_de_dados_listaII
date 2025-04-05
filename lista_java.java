@@ -53,111 +53,15 @@ public class lista_java {
 
         System.out.println("==========================Menu===========================");
         System.out.println("Escolha uma opção:");
-        System.out.println("1. Conceitos Básicos");
-        System.out.println("2. Estruturas de Controle");
-        System.out.println("3. Arrays e Listas");
-        System.out.println("4. Orientação a Objetos");
-        System.out.println("5. Pilhas");
-        System.out.println("6. Fila");
+        System.out.println("1. Orientação a Objetos");
+        System.out.println("2. Pilhas");
+        System.out.println("3. Fila");
         System.out.println("0. Sair");
         System.out.println("=========================================================");
         int opcao = scanner.nextInt();
         scanner.nextLine();
         switch (opcao) {
             case 1:
-                // Olá, Mundo!
-                System.out.println("Olá, Mundo!");
-                
-                // Soma de dois números inteiros
-                System.out.print("Digite o primeiro número: ");
-                int num1 = scanner.nextInt();
-                System.out.print("Digite o segundo número: ");
-                int num2 = scanner.nextInt();
-                int soma = num1 + num2;
-                System.out.println("A soma é: " + soma);
-
-                // Par ou ímpar
-                System.out.print("Digite um número: ");
-                int numero = scanner.nextInt();
-                if (numero % 2 == 0) {
-                    System.out.println("O número " + numero + " é par.");
-                } else {
-                    System.out.println("O número " + numero + " é ímpar.");
-                }
-
-                // Área do círculo
-                System.out.print("Digite o raio do círculo: ");
-                double raio = scanner.nextDouble();
-                double area = Math.PI * Math.pow(raio, 2);
-                System.out.println("A área do círculo é: " + area);
-
-                // Cumprimento
-                scanner.nextLine();
-                System.out.print("Digite seu nome: ");
-                String nome = scanner.nextLine();
-                System.out.println("Olá, " + nome + "!");
-                break;
-            case 2:
-                // Números de 1 a 10 usando loop for
-                System.out.println("Números de 1 a 10:");
-                for (int i = 1; i <= 10; i++) {
-                    System.out.print(i + " ");
-                }
-                System.out.println();
-
-                // Média de uma lista de números
-                System.out.print("Digite a quantidade de números para calcular a média: ");
-                int quantidade = scanner.nextInt();
-                int somaNumeros = 0;
-                for (int i = 0; i < quantidade; i++) {
-                    System.out.print("Digite o número " + (i + 1) + ": ");
-                    somaNumeros += scanner.nextInt();
-                }
-                double media = (double) somaNumeros / quantidade;
-                System.out.println("A média é: " + media);
-
-                // Números primos de 1 a 100
-                System.out.println("Números primos de 1 a 100:");
-                for (int i = 2; i <= 100; i++) {
-                    boolean primo = true;
-                    for (int j = 2; j <= Math.sqrt(i); j++) {
-                        if (i % j == 0) {
-                            primo = false;
-                            break;
-                        }
-                    }
-                    if (primo) {
-                        System.out.print(i + " ");
-                    }
-                }
-                System.out.println();
-
-                // Contar vogais em uma string
-                scanner.nextLine();
-                System.out.print("Digite uma string: ");
-                String str = scanner.nextLine();
-                int contadorVogais = 0;
-                for (char c : str.toCharArray()) {
-                    if ("aeiouAEIOU".indexOf(c) != -1) {
-                        contadorVogais++;
-                    }
-                }
-                System.out.println("A quantidade de vogais na string é: " + contadorVogais);
-
-                // Sequência de Fibonacci
-                System.out.print("Digite o número de termos da sequência de Fibonacci: ");
-                int n = scanner.nextInt();
-                int a = 0, b = 1;
-                System.out.println("Sequência de Fibonacci:");
-                for (int i = 0; i < n; i++) {
-                    System.out.print(a + " ");
-                    int proximo = a + b;
-                    a = b;
-                    b = proximo;
-                }
-                System.out.println();
-                break;
-            case 3:
                 // Valor máximo em um array de inteiros
                 System.out.print("Digite o tamanho do array: ");
                 int tamanho = scanner.nextInt();
@@ -219,7 +123,7 @@ public class lista_java {
                 }
                 System.out.println();
                 break;
-            case 4:
+            case 2:
                 // Classe Pessoa
                 class Pessoa {
                     String nome;
@@ -321,7 +225,7 @@ public class lista_java {
                 carro.acelerar();
                 carro.frear();
                 break;
-            case 5:
+            case 3:
                 // 21. Escreva um programa que utilize uma pilha para inverter os caracteres de uma string. A ideia é empilhar os
                 // caracteres da string original e, em seguida, desempilhá-los para formar a string invertida.
                 
